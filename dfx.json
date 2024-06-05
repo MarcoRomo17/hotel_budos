@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hotel_budos_backend": {
+      "main": "src/hotel_budos_backend/main.mo",
+      "type": "motoko"
+    },
+    "hotel_budos_frontend": {
+      "dependencies": [
+        "hotel_budos_backend"
+      ],
+      "source": [
+        "src/hotel_budos_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hotel_budos_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
